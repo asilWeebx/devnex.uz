@@ -15,7 +15,7 @@ export default function Contact() {
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000/api";
+    const API = process.env.NEXT_PUBLIC_API_URL ?? "https://devnex.pythonanywhere.com/api";
     try {
       const payload = {
         ...form,
